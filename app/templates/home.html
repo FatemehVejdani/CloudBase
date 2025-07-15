@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row justify-content-center">
+  <div class="col-md-6">
+    <h2 class="text-center">Order Your Database</h2>
+    <form action="{{ url_for('home') }}" method="POST">
+      <div class="mb-3">
+        <label for="volume" class="form-label">Storage Volume (GB)</label>
+        <input type="number" class="form-control" id="volume" name="volume" required>
+      </div>
+      <div class="mb-3">
+        <label for="cores" class="form-label">Cores</label>
+        <input type="number" class="form-control" id="cores" name="cores" required>
+      </div>
+      <div class="mb-3">
+        <label for="location" class="form-label">Server Location</label>
+        <select class="form-control" id="location" name="location" required>
+          <option value="us-east">US East</option>
+          <option value="eu-west">EU West</option>
+          <option value="asia">Asia</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label for="domain" class="form-label">Domain</label>
+        <input type="text" class="form-control" id="domain" name="domain" required>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Create Database</button>
+    </form>
+  </div>
+</div>
+{% endblock %}

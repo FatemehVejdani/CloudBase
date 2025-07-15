@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="row">
+  <div class="col-md-12">
+    <h2 class="text-center">Dashboard</h2>
+    <h4>Your Orders</h4>
+    <table class="table">
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Volume (GB)</th>
+          <th>Cores</th>
+          <th>Location</th>
+          <th>Domain</th>
+        </tr>
+      </thead>
+      <tbody>
+        {% for order in orders %}
+        <tr>
+          <td>{{ order.id }}</td>
+          <td>{{ order.volume }}</td>
+          <td>{{ order.cores }}</td>
+          <td>{{ order.location }}</td>
+          <td>{{ order.domain }}</td>
+        </tr>
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+</div>
+{% endblock %}
