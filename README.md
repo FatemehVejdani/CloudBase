@@ -1,11 +1,14 @@
- CloudBase – Scalable On-Demand MariaDB Cloud Provisioning
-<div align="center">
+# 🌩️ CloudBase – Scalable On-Demand MariaDB Cloud Provisioning
 
-A lightweight Flask-based platform for deploying cloud-hosted MariaDB instances with custom specifications.
-</div>
-📌 Project Summary
+**A lightweight Flask-based platform for deploying cloud-hosted MariaDB instances with custom specifications.**
+
+---
+
+📌 **Project Summary**
 
 CloudBase is a streamlined cloud provisioning platform that allows users to create MariaDB instances by selecting desired specifications such as storage, CPU count, server region, and custom domain. Upon submitting a request, a MariaDB instance is automatically provisioned and credentials are provided via the user dashboard. The platform is built using Flask, and user authentication is handled securely through Flask-Login.
+گ
+
 🚀 Key Features
 
     🔐 Authentication System
