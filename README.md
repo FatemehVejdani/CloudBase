@@ -1,85 +1,76 @@
 # 🌩️ CloudBase – Scalable On-Demand MariaDB Cloud Provisioning
 
-**A lightweight Flask-based platform for deploying cloud-hosted MariaDB instances with custom specifications.**
+**CloudBase is a lightweight Flask-based platform that enables users to deploy on-demand, cloud-hosted MariaDB instances with custom specifications.**
 
 ---
 
-📌 **Project Summary**
+## 📌 Project Overview
 
-CloudBase is a streamlined cloud provisioning platform that allows users to create MariaDB instances by selecting desired specifications such as storage, CPU count, server region, and custom domain. Upon submitting a request, a MariaDB instance is automatically provisioned and credentials are provided via the user dashboard. The platform is built using Flask, and user authentication is handled securely through Flask-Login.
-گ
+CloudBase streamlines the process of creating and managing MariaDB databases by allowing users to configure their instance's storage, CPU, server location, and custom domain. Once a request is submitted, a MariaDB instance is automatically provisioned, and access credentials are shown in the user dashboard.
 
-🚀 Key Features
+> **Tech Highlights:** Built with Flask, secured with Flask-Login, and architected for modular scalability.
 
-    🔐 Authentication System
-    User login and registration with session management via Flask-Login.
+---
 
-    📄 Custom Order Interface
-    Interactive UI for selecting storage, CPU, region, and domain.
+## 🚀 Key Features
 
-    ⚙️ Automated Database Provisioning
-    On form submission, a MariaDB database is created and assigned to the user.
+- 🔐 **Secure Authentication**  
+  User login and registration with session handling via Flask-Login.
 
-    🖥️ User Dashboard
-    Displays all order specifications and connection credentials.
+- 📄 **Custom Order Interface**  
+  Interactive web form to configure storage size, CPU count, region, and domain.
 
-    🧱 Clean, Modular Architecture
-    Organized Flask project structure for scalability and maintainability.
+- ⚙️ **Automated Provisioning**  
+  MariaDB databases are automatically created upon form submission.
 
-🖼️ Pages Overview
-Page	URL Route	Description
-Home	/	Database order form
-Login	/login	User login interface
-Register	/register	New user registration
-Dashboard	/dashboard	View ordered resources and DB info
-🧭 Tech Stack
+- 🖥️ **User Dashboard**  
+  Displays all orders with their specifications and connection credentials.
 
-    Backend: Python (Flask)
+- 🧱 **Clean & Modular Codebase**  
+  Structured Flask project, easy to scale and maintain.
 
-    Authentication: Flask-Login
+---
 
-    Database Engine: MariaDB (or compatible MySQL)
+## 🖼️ Pages Overview
 
-    Frontend: HTML5, CSS3
+| Page        | URL Route     | Description                                |
+|-------------|---------------|--------------------------------------------|
+| Home        | `/`           | Database order form                        |
+| Login       | `/login`      | User login page                            |
+| Register    | `/register`   | User registration page                     |
+| Dashboard   | `/dashboard`  | View user’s databases and access info      |
 
-    Others: Werkzeug, Jinja2
+---
 
-📁 Project Structure
+## 🧭 Tech Stack
 
-CloudBase/
-├── app.py           # Main application
-├── models.py        # Database models and schema
-├── utils.py         # Utility functions
-├── static/          # CSS, JS, and assets
-├── templates/       # HTML templates
-└── README.md        # Project documentation
+- **Backend:** Python (Flask)  
+- **Authentication:** Flask-Login  
+- **Database Engine:** MariaDB (or MySQL-compatible)  
+- **Frontend:** HTML5, CSS3 (with Jinja2 templates)  
+- **Others:** Werkzeug, Jinja2  
 
-⚙️ Installation & Usage
-Prerequisites:
 
-    Python 3.7+
+---
 
-    MariaDB or MySQL installed and accessible
+## ⚙️ Installation & Usage
 
-Setup Instructions:
+### ✅ Prerequisites
 
+- Python 3.7 or higher  
+- MariaDB or MySQL installed and running
+
+### 📦 Setup Instructions
+
+```bash
 # Clone the repository
 git clone https://github.com/FatemehVejdani/CloudBase.git
 cd CloudBase
 
-# Install dependencies
+# Install Python dependencies
 pip install -r requirements.txt
 
 # Run the Flask app
 python app.py
-
-Open your browser and navigate to http://localhost:5000.
-⚠️ Known Limitations
-
-    User-selected resources (CPU, storage) are not enforced at the system level.
-
-    Admin panel not yet implemented.
-
-    Database access control is simplistic and intended for prototype use only.
 
 
