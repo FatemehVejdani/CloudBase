@@ -91,6 +91,3 @@ Contributions, bug reports, and suggestions are highly welcome.
     Open an Issue / Submit a Pull Request
 
 <div align="center">
-
-Crafted with care by Fatemeh Vejdani
-</div>
