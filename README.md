@@ -82,12 +82,4 @@ Open your browser and navigate to http://localhost:5000.
 
     Database access control is simplistic and intended for prototype use only.
 
-📬 Contact & Contribution
 
-Contributions, bug reports, and suggestions are highly welcome.
-
-    GitHub: @FatemehVejdani
-
-    Open an Issue / Submit a Pull Request
-
-<div align="center">
