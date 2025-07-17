@@ -33,12 +33,14 @@ CloudBase streamlines the process of creating and managing MariaDB databases by 
 
 ## 🖼️ Pages Overview
 
-| Page        | URL Route     | Description                                |
-|-------------|---------------|--------------------------------------------|
-| Home        | `/`           | Database order form                        |
-| Login       | `/login`      | User login page                            |
-| Register    | `/register`   | User registration page                     |
-| Dashboard   | `/dashboard`  | View user’s databases and access info      |
+## 🖼️ Pages Overview
+
+| Page       | URL Route     | Description                                                             |
+|------------|---------------|-------------------------------------------------------------------------|
+| Home       | `/`           | Form for submitting custom MariaDB instance requests                    |
+| Login      | `/login`      | User login page for accessing the dashboard                             |
+| Sign Up    | `/signup`     | New user registration page                                              |
+| Dashboard  | `/dashboard`  | Displays all ordered databases along with their specifications & details |
 
 ---
 
